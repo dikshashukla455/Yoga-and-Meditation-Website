@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.time-select, .sound-picker,.player-container{
+    height: 80%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player-container{
+    position: relative;
+}
+.player-container svg{
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    pointer-events: none;
+}
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+  }
+.time-display{
+    position: absolute;
+    bottom: 4%;
+    color: white;
+    font-size: 50px;
+}
+video{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index:-10;
+}
+.time-select button,.sound-picker button{
+    color: whitesmoke;
+    font-weight: bold;
+    width: 30%;
+    height: 10%;
+    background: none;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.time-select button:hover{
+    color: brown;
+    background:white ;
+    border-color: brown;
+}
+.sound-picker button{
+    border:none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+}
+.sound-picker button:nth-child(2){
+    background: orangered;
+    border-radius: 50%;
+}
+.sound-picker button:nth-child(1){
+    background: blue;
+    border-radius: 50%;
+}
+.sound-picker button img{
+    height: 100%;
+}
+.replay{
+    position: absolute;
+    bottom: 2%;
+}
+.carousel-inner .item{
+    height: 100vh;
+}
+.btn{
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: whitesmoke;
+    font-weight: bold;
+}
+.banner{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-caption{
+    padding-bottom:250px ;
+    font-family:poppins;
+}
+.carousel-caption h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel-caption h2 span{
+    color:#edbb00;
+}
+.back{
+    background:yellowgreen ;
+}
+p.size{
+    font-size:20px;
+}
+.card{
+    border-radius: 18px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+/*.heading{
+    text-align: center;
+    font-size:50px;
+    color: whitesmoke;
+    text-decoration: underline;
+    z-index:-10;
+}*/
+.card:hover{
+    transform: scale3d(1.5);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.color{
+    background:#4019FF;
+    color: white;
+    border-radius: 20px;
+}
+.look{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:18px;
+    cursor: pointer;
+    color: black;
+}
+.look:hover{
+    color: grey;
+    text-decoration: none;
+}
+.im{
+    position: absolute;
+    top: 169%;
+    left: 54%;
+}
+/*.row{
+     max-width: 1000px;
+     margin: 0 auto;
+     z-index: 10;
+}*/
+.main-nav{
+    float:right;
+    margin-top: 40px;
+    position: absolute;
+    left:55%;
+    z-index: 10;
+}
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 80px;
+    z-index: 10;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.main-nav li a:hover{
+    border-bottom: 3px solid darkturquoise;
+}
+.position1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.position2{
+    position: absolute;
+    top: 5%;
+    left: 87%;
+}
+.pos1{
+    position: absolute;
+    top: 10%;
+    left: 9.5%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pos2{
+    position: absolute;
+    top: 10%;
+    left: 86.3%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.posi1{
+    position: absolute;
+    top: 85%;
+    left: 14%;
+}
+.posi2{
+    position: absolute;
+    top: 85%;
+    left: 81%;
+}
+.pos3{
+    position: absolute;
+    top: 90%;
+    left: 14%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pos4{
+    position: absolute;
+    top: 90%;
+    left: 82%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.color1{
+    padding: 10px 25px ;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.color1:hover{
+    color: firebrick;
+    background: white;
+    border-color: darkred;
+}
+.color2{
+    background: brown;
+    color: cornsilk;
+}

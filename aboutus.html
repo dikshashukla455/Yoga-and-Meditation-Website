@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="row">
+            <ul class="main-nav">
+              <li><a href="main.html">HOME</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+          </div>
+        </nav>
+        </header>
+        <section class="about">
+                <div class="part1">
+                   <div class="img1"><img src="img/dance-3134828_640.jpg" width="400" height="508" class="image"></div>
+                  <div class="img2"><img src="img/ballet-1840275_640.jpg" width="300" height="250" class="image"></div>
+                    <div class="img3"><img src="img/yoga-4849681_640.jpg" width="300" height="250" class="image"></div>
+                    </div>
+                    <div class="part2"><div class="branding"><h1>ABOUT US</h1></div>
+                      <div class="title-underline bg-warning"></div>
+                    <p class="para">Yoga is primarily a spiritual discipline that concentrates on subtle science that focuses on achieving harmony between an individual’s mind and body. The word Yoga first appeared in the oldest sacred texts, the Rig Veda and is derived from the Sanskrit root “Yuj” which means join or unite.
+                      <br>
+                      <br>
+                      HISTORY OF YOGA :
+                      <br>
+                      <br>
+                   The practice of Yoga was started during the Indus-Sarasvati civilization in Northern India over 5,000 years ago. It was first mentioned in Rig Veda, a collection of texts that consisted of rituals, mantras, and songs which was mainly used by Brahmans, the Vedic priests. Yoga was slowly developed by Brahmans who eventually documented their practices and beliefs in the Upanishads that has over 200 scriptures.
+                   <br>
+                    Yoga in Vedas means a yoke. In some early writings, Yoga was mainly used in describing a warrior dying and transcending into the heavens while at the back of his chariot to the gods and the higher powers of being.
+                    <br>
+                   During the Vedic times, Vedic priests were generally self-disciplined and avoided any forms of indulgence instead; they performed sacrifices which were known as yajna and used poses that most researchers believe are the precursor of the kind of Yoga poses we use today in the modern world <span id="dots">...</span>
+                      <span id="more">In the 3rd Century BCE, the word “yoga” became common in other religions like Jain, Hindu, and Buddhist writings. In Mahayana Buddhism, the practice of yoga for both spiritual and meditative use was known as Yogachara which consisted of eight significant steps of meditation called "insight".
+                        <br>
+                      In the 5th century, yoga was meant for meditation and religious use, but not as a form of workout. At around the same time, the concept became even more established among the Jains, Buddhists, and Hindus. The first versions of yoga were meant for spiritual practices and revolved around several core values.
+                      <br>
+                      The first core value analyzed an individual’s perception and cognitive state while understanding the cause of suffering and eventually using meditation to solve the issue. The second core value focused on boosting consciousness, and the third was used as a way of achieving transcendence. The fourth value was full of mystery because it used Yoga to penetrate into other people’s bodies and act supernaturally.
+                      <br>
+                      Yoga later became widely valued because of the Indian nationalist movement as a way of building up pride and cultural identity. Surprisingly, the practice of Yoga was widely promoted by powerful families, institutions, and activities until India attained its independence in 1947.
+                   </span>
+                   <br>
+                   <br>
+                   <button onclick="read_more_less()" class="btn btn-warning" id="read">Read More</button></p>
+                   </div>
+                   </section>
+                   <script type="text/javascript">
+                    var i=0;
+                    function read_more_less(){
+                     var dots = document.getElementById('dots');
+                     var moretext=document.getElementById('more');
+                     var read=document.getElementById('read');
+                     if(dots.style.display === 'none')
+                     {
+                      dots.style.display = 'inline';
+                      moretext.style.display = 'none';
+                      read.innerHTML ="Read More";
+                     }
+                     else
+                     {
+                      dots.style.display ="none";
+                      moretext.style.display="inline";
+                      read.innerHTML="Read Less";
+                     }
+                    }
+                  </script>
+                  </body>
+                  </html>
+             
